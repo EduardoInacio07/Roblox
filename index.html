@@ -66,10 +66,12 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                   <!-- Slides -->
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                  ...
+                  <div class="swiper-slide"><img src="img/A.svg" alt="Livro sobre A"></div>
+                  <div class="swiper-slide"><img src="img/B.svg" alt="Livro sobre B"></div>
+                  <div class="swiper-slide"><img src="img/C.svg" alt="Livro sobre C"></div>
+                  <div class="swiper-slide"><img src="img/D.svg" alt="Livro sobre D"></div>
+                  <div class="swiper-slide"><img src="img/E.svg" alt="Livro sobre E"></div>
+                
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -84,7 +86,13 @@
         </section>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-             
+
+        <script>
+            const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+          });
+        </script>             
     </body>
 </html>
 
